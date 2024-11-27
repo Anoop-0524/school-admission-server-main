@@ -71,7 +71,7 @@ StudentData.create = (newStudentData, result) => {
             // newStudentData.regNo = "A00001"
             newStudentData.regNo = "SS0001"
         } else {
-            lastId = parseInt(lastId.substr(1,4))+1
+            lastId = parseInt(lastId.substr(2))+1
             lastId = "SS"+String(lastId).padStart(4,'0')
             newStudentData.regNo = lastId
         }
