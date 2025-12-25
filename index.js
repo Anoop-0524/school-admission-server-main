@@ -20,7 +20,7 @@ app.get("/api", (req,res) => {
     res.json({message: "Hello" });
 });
 app.get("/api/getAll", (req,res) => {
-    const sqlCount = "Select * from student_data;"
+    const sqlCount = "Select * from Alphonsa_Nursery_data;"
     db.query(sqlCount, (err,result) => {
         console.log("count fetched successfully");
         res.json({ result : result , 'err': err})
@@ -39,4 +39,4 @@ app.listen(3001, () => {
 });
 
 
-// INSERT INTO `school-admission-forms`.`student_data` (`reg_no`, `first_name`, `middle_name`, `last_name`, `mothers_name`, `dob`, `gender`, `address`) VALUES ('A00001', 'deva', 'deva', 'deva', 'asdf', 'asdf', 'asdf', 'adsf');
+// INSERT INTO `school-admission-forms`.`Alphonsa_Nursery_data` (`reg_no`, `first_name`, `middle_name`, `last_name`, `mothers_name`, `dob`, `gender`, `address`) VALUES ('A00001', 'deva', 'deva', 'deva', 'asdf', 'asdf', 'asdf', 'adsf');
