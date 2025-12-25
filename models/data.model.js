@@ -35,7 +35,7 @@ const StudentData = function (studentData) {
 
     this.motherName = studentData.motherName,
     this.motherAge = studentData.motherAge,
-    this.motherProfeion = studentData.motherProfeion,
+    this.motherProfession = studentData.motherProfession,
     this.motherLang = studentData.motherLang,
     this.motherEducation = studentData.motherEducation,
     this.motherContact = studentData.motherContact,
@@ -45,7 +45,7 @@ const StudentData = function (studentData) {
     this.mentorName = studentData.mentorName,
     this.mentorRelation = studentData.mentorRelation,
     this.mentorAge = studentData.mentorAge,
-    this.mentorProfeion = studentData.mentorProfeion,
+    this.mentorProfession = studentData.mentorProfession,
     this.mentorLang = studentData.mentorLang,
     this.mentorEducation = studentData.mentorEducation,
     this.mentorContact = studentData.mentorContact,
