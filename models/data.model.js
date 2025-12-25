@@ -69,10 +69,10 @@ StudentData.create = (newStudentData, result) => {
         // return res;
         if (lastId == null) {
             // newStudentData.regNo = "A00001"
-            newStudentData.regNo = "APS0001"
+            newStudentData.regNo = "PP0001"
         } else {
             lastId = parseInt(lastId.substr(2))+1
-            lastId = "APS"+String(lastId).padStart(4,'0')
+            lastId = "PP"+String(lastId).padStart(4,'0')
             newStudentData.regNo = lastId
         }
         console.log("newRegNo: ", newStudentData.regNo)
