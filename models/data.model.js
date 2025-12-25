@@ -35,7 +35,7 @@ const StudentData = function (studentData) {
 
     this.motherName = studentData.motherName,
     this.motherAge = studentData.motherAge,
-    this.motherProfession = studentData.motherProfession,
+    this.motherProfeion = studentData.motherProfeion,
     this.motherLang = studentData.motherLang,
     this.motherEducation = studentData.motherEducation,
     this.motherContact = studentData.motherContact,
@@ -45,7 +45,7 @@ const StudentData = function (studentData) {
     this.mentorName = studentData.mentorName,
     this.mentorRelation = studentData.mentorRelation,
     this.mentorAge = studentData.mentorAge,
-    this.mentorProfession = studentData.mentorProfession,
+    this.mentorProfeion = studentData.mentorProfeion,
     this.mentorLang = studentData.mentorLang,
     this.mentorEducation = studentData.mentorEducation,
     this.mentorContact = studentData.mentorContact,
@@ -69,10 +69,10 @@ StudentData.create = (newStudentData, result) => {
         // return res;
         if (lastId == null) {
             // newStudentData.regNo = "A00001"
-            newStudentData.regNo = "SS0001"
+            newStudentData.regNo = "APS0001"
         } else {
             lastId = parseInt(lastId.substr(2))+1
-            lastId = "SS"+String(lastId).padStart(4,'0')
+            lastId = "APS"+String(lastId).padStart(4,'0')
             newStudentData.regNo = lastId
         }
         console.log("newRegNo: ", newStudentData.regNo)
