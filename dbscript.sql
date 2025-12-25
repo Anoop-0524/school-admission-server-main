@@ -1,4 +1,4 @@
-CREATE TABLE `student_data` (
+CREATE TABLE `Alphonsa_Nursery_data` (
   `regNo` varchar(6) NOT NULL,
   `firstName` varchar(20) NOT NULL,
   `middleName` varchar(20) NOT NULL,
