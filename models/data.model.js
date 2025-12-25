@@ -56,7 +56,7 @@ const StudentData = function (studentData) {
 
 StudentData.create = (newStudentData, result) => {
     sql = connectionRequest();
-    sql.query("SELECT MAX(regNo) as lastId FROM student_data;", (err,res) => {
+    sql.query("SELECT MAX(regNo) as lastId FROM Alphonsa_Nursery_data;", (err,res) => {
         if (err) {
             console.log("error: ", err);
             result(err, null);
@@ -76,7 +76,7 @@ StudentData.create = (newStudentData, result) => {
             newStudentData.regNo = lastId
         }
         console.log("newRegNo: ", newStudentData.regNo)
-        sql.query("INSERT INTO student_data SET ? ", newStudentData, (err, res) => {
+        sql.query("INSERT INTO Alphonsa_Nursery_data SET ? ", newStudentData, (err, res) => {
             if (err) {
                 console.log("error: ", err);
                 result(err, null);
@@ -96,7 +96,7 @@ StudentData.create = (newStudentData, result) => {
 
 StudentData.findById = (id, result) => {
     sql = connectionRequest();
-    sql.query("SELECT * FROM student_data WHERE reg_no = ?",id, (err, res) => {
+    sql.query("SELECT * FROM Alphonsa_Nursery_data WHERE reg_no = ?",id, (err, res) => {
         if (err) {
             console.log("error: ", err, 'id: ',id);
             result(err, null);
@@ -119,7 +119,7 @@ StudentData.findById = (id, result) => {
 
 StudentData.getAll = (title, result) => {
     sql = connectionRequest();
-    let query = "SELECT * FROM student_data";
+    let query = "SELECT * FROM Alphonsa_Nursery_data";
 
     sql.query(query, (err, res) => {
         if (err) {
@@ -129,7 +129,7 @@ StudentData.getAll = (title, result) => {
             return;
         }
 
-        console.log("student_data: ", res);
+        console.log("Alphonsa_Nursery_data: ", res);
         result(null, res);
         sql.destroy();
     });
